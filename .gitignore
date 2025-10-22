@@ -1,0 +1,6 @@
+.github
+node_modules
+arquivos.ps1
+.vscode
+.temp
+temp/
