@@ -11,11 +11,11 @@
     The licensor cannot revoke these freedoms as long as you follow the license terms.
 
 <!-- markdownlint-disable MD033-->
-<img src="src/assets/license/attribution.png" alt="Attribution Icon" width="30" style="vertical-align: middle;"> **ATTRIBUTION** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+ **ATTRIBUTION** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
-<img src="src/assets/license/commercial.png" alt="Noncommercial Icon" width="30" style="vertical-align: middle;"> **NONCOMMERCIAL** — You may not use the material for commercial purposes.
+ **NONCOMMERCIAL** — You may not use the material for commercial purposes.
 
-<img src="src/assets/license/equal.png" alt="No Derivatives Icon" width="30" style="vertical-align: middle;"> **NODERIVATIVES** — If you remix, transform, or build upon the material, you may not distribute the modified material.
+ **NODERIVATIVES** — If you remix, transform, or build upon the material, you may not distribute the modified material.
 
 ```NO ADDITIONAL RESTRICTIONS — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.```
 
