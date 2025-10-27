@@ -1,0 +1,644 @@
+@import url("./base.css");
+
+/* ========================================
+
+
+   PROPRIEDADES CUSTOMIZADAS PARA ANIMAÇÕES
+
+
+   ======================================== */
+
+@property --cor-animate-1 {
+  syntax: "<color>";
+
+  inherits: false;
+
+  initial-value: #ff0000;
+}
+
+@property --cor-animate-2 {
+  syntax: "<color>";
+
+  inherits: false;
+
+  initial-value: #00ff00;
+}
+
+@property --cor-animate-3 {
+  syntax: "<color>";
+
+  inherits: false;
+
+  initial-value: #0000ff;
+}
+
+/* ========================================
+
+
+   ANIMAÇÕES CSS - ORGANIZADAS POR CATEGORIA
+
+
+   ======================================== */
+
+/* ---------- ANIMAÇÕES DE ENTRADA ---------- */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+
+    opacity: 1;
+  }
+}
+
+/* ---------- ANIMAÇÕES DE SAÍDA ---------- */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-100%);
+
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(100%);
+
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-100%);
+
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%);
+
+    opacity: 0;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(0.5);
+
+    opacity: 0;
+  }
+}
+
+/* ---------- ANIMAÇÕES DE ATENÇÃO ---------- */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+/* ---------- ANIMAÇÕES DE TRANSFORMAÇÃO ---------- */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes glowPrimary {
+  0% {
+    box-shadow: 0 0 5px var(--cor-1st-300);
+  }
+
+  50% {
+    box-shadow: 0 0 20px var(--cor-1st-300);
+  }
+
+  100% {
+    box-shadow: 0 0 5px var(--cor-1st-300);
+  }
+}
+
+@keyframes glowSecondary {
+  0% {
+    box-shadow: 0 0 5px var(--cor-2nd-300);
+  }
+
+  50% {
+    box-shadow: 0 0 20px var(--cor-2nd-300);
+  }
+
+  100% {
+    box-shadow: 0 0 5px var(--cor-2nd-300);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px var(--cor-1st-300);
+  }
+
+  50% {
+    box-shadow:
+      0 0 30px var(--cor-1st-300),
+      0 0 40px var(--cor-1st-300);
+  }
+}
+
+@keyframes glowPulseSecondary {
+  0%,
+  100% {
+    box-shadow: 0 0 10px var(--cor-2nd-300);
+  }
+
+  50% {
+    box-shadow:
+      0 0 30px var(--cor-2nd-300),
+      0 0 40px var(--cor-2nd-300);
+  }
+}
+
+@keyframes textGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes textGlowPrimary {
+  0%,
+  100% {
+    text-shadow: 0 0 5px var(--cor-1st-300);
+  }
+
+  50% {
+    text-shadow: 0 0 20px var(--cor-1st-300);
+  }
+}
+
+@keyframes textGlowSecondary {
+  0%,
+  100% {
+    text-shadow: 0 0 5px var(--cor-2nd-300);
+  }
+
+  50% {
+    text-shadow: 0 0 20px var(--cor-2nd-300);
+  }
+}
+
+@keyframes textGlowRainbow {
+  0%,
+  100% {
+    text-shadow: 0 0 5px var(--cor-1st-300);
+  }
+
+  25% {
+    text-shadow: 0 0 10px var(--cor-2nd-300);
+  }
+
+  50% {
+    text-shadow: 0 0 15px var(--cor-sucesso);
+  }
+
+  75% {
+    text-shadow: 0 0 10px var(--cor-aviso);
+  }
+}
+
+@keyframes shimmerGlow {
+  0% {
+    background-position: -200% 0;
+    box-shadow: 0 0 10px var(--cor-1st-300);
+  }
+
+  50% {
+    background-position: 0% 50%;
+    box-shadow: 0 0 20px var(--cor-1st-300);
+  }
+
+  100% {
+    background-position: 200% 0;
+    box-shadow: 0 0 10px var(--cor-1st-300);
+  }
+}
+
+@keyframes borderGlow {
+  0%,
+  100% {
+    border-color: var(--cor-1st-300);
+    box-shadow: 0 0 5px var(--cor-1st-300);
+  }
+
+  50% {
+    border-color: var(--cor-1st-500);
+    box-shadow: 0 0 20px var(--cor-1st-500);
+  }
+}
+
+@keyframes borderGlowSecondary {
+  0%,
+  100% {
+    border-color: var(--cor-2nd-300);
+    box-shadow: 0 0 5px var(--cor-2nd-300);
+  }
+
+  50% {
+    border-color: var(--cor-2nd-500);
+    box-shadow: 0 0 20px var(--cor-2nd-500);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  0%,
+  50% {
+    border-color: transparent;
+  }
+
+  51%,
+  100% {
+    border-color: currentColor;
+  }
+}
+@keyframes reveal {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes hide {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+/* ---------- ANIMAÇÕES COM PROPRIEDADES CUSTOMIZADAS ---------- */
+
+@keyframes colorAnimate1 {
+  0% {
+    --cor-animate-1: var(--cor-st);
+  }
+
+  33% {
+    --cor-animate-1: var(--cor-nd);
+  }
+
+  66% {
+    --cor-animate-1: var(--cor-rd);
+  }
+
+  100% {
+    --cor-animate-1: var(--cor-st);
+  }
+}
+
+@keyframes colorAnimate2 {
+  0% {
+    --cor-animate-2: var(--cor-st, #ffff00);
+  }
+
+  50% {
+    --cor-animate-2: var(--cor-nd, #ff00ff);
+  }
+
+  100% {
+    --cor-animate-2: var(--cor-st, #ffff00);
+  }
+}
+
+@keyframes colorAnimate3 {
+  0% {
+    --cor-animate-3: var(--cor-1st, #00ffff);
+  }
+
+  25% {
+    --cor-animate-3: var(--cor-2nd, #ff8000);
+  }
+
+  50% {
+    --cor-animate-3: var(--cor-3rd, #8000ff);
+  }
+
+  75% {
+    --cor-animate-3: var(--cor-4th, #0080ff);
+  }
+
+  100% {
+    --cor-animate-3: var(--cor-1st, #00ffff);
+  }
+}
