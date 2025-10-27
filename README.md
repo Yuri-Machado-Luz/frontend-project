@@ -99,8 +99,6 @@ frontend-project/
 4. Push para a branch (`git push origin feature/nova-feature`).
 5. Abra um Pull Request.
 
-Siga as convenções de commits e boas práticas descritas em [copilot-instructions.md](.github/copilot-instructions.md).
-
 ## Licença
 
 Este projeto está licenciado sob os termos da [LICENSE.md](LICENSE.md).
