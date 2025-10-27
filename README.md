@@ -61,22 +61,15 @@ Acesse em `http://localhost:3000` (ou porta configurada em server.js).
 
 ```text
 frontend-project/
-├── .github/               # Instruções para agentes de IA
-├── node_modules/          # Dependências instaladas
+├
 ├── src/                   # Código fonte organizado
 │   ├── css/               # Estilos CSS
 │   ├── images/            # Imagens e ícones
 │   ├── js/                # Scripts JavaScript
 │   └── views/             # Templates HTML
-├── temp/                  # Dados mock (JSON)
-│   ├── blog.json
-│   ├── cursos.json
-│   ├── doacoes.json
-│   ├── usuarios.json
-│   └── voluntarios.json
+├
 ├── .gitignore             # Arquivos ignorados pelo Git
 ├── app.js                 # Lógica JavaScript do frontend
-├── arquivos.ps1           # Script PowerShell (utilitário)
 ├── index.html             # Página principal
 ├── LICENSE.md             # Licença do projeto
 ├── package.json           # Configuração do projeto Node.js
@@ -105,8 +98,6 @@ frontend-project/
 3. Commit suas mudanças (`git commit -m 'feat: adicionar nova feature'`).
 4. Push para a branch (`git push origin feature/nova-feature`).
 5. Abra um Pull Request.
-
-Siga as convenções de commits e boas práticas descritas em [copilot-instructions.md](.github/copilot-instructions.md).
 
 ## Licença
 
