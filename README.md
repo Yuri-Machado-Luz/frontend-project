@@ -4,6 +4,7 @@ Projeto desenvolvido como requisito para conclusão do curso em Análise e Desen
 
 **Status do Projeto:** Versão 1.0 - Concluído
 
+https://yuri-machado-luz.github.io/frontend-project/
 Para mais detalhes sobre a proposta e entregas, consulte [SOBRE.md](SOBRE.md).
 
 ## Tecnologias Utilizadas
