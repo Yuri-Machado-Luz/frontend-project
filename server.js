@@ -3,8 +3,8 @@ const path = require("path");
 
 const app = express();
 
-// Servir arquivos estáticos da pasta dist
-app.use(express.static(path.join(__dirname, 'dist')));
+// Servir arquivos estáticos da pasta src
+app.use(express.static(path.join(__dirname, 'src')));
 
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./index.html"));

@@ -62,8 +62,12 @@ Acesse em `http://localhost:3000` (ou porta configurada em server.js).
 ```text
 frontend-project/
 ├── .github/               # Instruções para agentes de IA
-├── dist/                  # Arquivos de build (se aplicável)
 ├── node_modules/          # Dependências instaladas
+├── src/                   # Código fonte organizado
+│   ├── css/               # Estilos CSS
+│   ├── images/            # Imagens e ícones
+│   ├── js/                # Scripts JavaScript
+│   └── views/             # Templates HTML
 ├── temp/                  # Dados mock (JSON)
 │   ├── blog.json
 │   ├── cursos.json
