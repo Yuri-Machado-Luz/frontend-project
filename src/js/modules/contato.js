@@ -98,14 +98,14 @@ export const validarFormulario = () => {
           validarCampo(
             campo,
             "nome-error",
-            "Nome deve ter pelo menos 2 caracteres."
+            "Nome deve ter pelo menos 2 caracteres.",
           );
           break;
         case "email":
           validarCampo(
             campo,
             "email-error",
-            "Por favor, insira um e-mail válido."
+            "Por favor, insira um e-mail válido.",
           );
           break;
         case "cpf":
@@ -121,7 +121,7 @@ export const validarFormulario = () => {
           validarCampo(
             campo,
             "telefone-error",
-            "Telefone deve estar no formato (00) 00000-0000."
+            "Telefone deve estar no formato (00) 00000-0000.",
           );
           break;
         case "data-nascimento":
@@ -152,43 +152,43 @@ export const validarFormulario = () => {
     formularioValido &= validarCampo(
       document.getElementById("nome"),
       "nome-error",
-      "Nome é obrigatório."
+      "Nome é obrigatório.",
     );
     formularioValido &= validarCampo(
       document.getElementById("email"),
       "email-error",
-      "E-mail é obrigatório."
+      "E-mail é obrigatório.",
     );
     formularioValido &= validarCPF(document.getElementById("cpf").value);
     formularioValido &= validarCampo(
       document.getElementById("telefone"),
       "telefone-error",
-      "Telefone é obrigatório."
+      "Telefone é obrigatório.",
     );
     formularioValido &= validarCampo(
       document.getElementById("data-nascimento"),
       "data-nascimento-error",
-      "Data de nascimento é obrigatória."
+      "Data de nascimento é obrigatória.",
     );
     formularioValido &= validarCampo(
       document.getElementById("endereco"),
       "endereco-error",
-      "Endereço é obrigatório."
+      "Endereço é obrigatório.",
     );
     formularioValido &= validarCampo(
       document.getElementById("cep"),
       "cep-error",
-      "CEP é obrigatório."
+      "CEP é obrigatório.",
     );
     formularioValido &= validarCampo(
       document.getElementById("cidade"),
       "cidade-error",
-      "Cidade é obrigatória."
+      "Cidade é obrigatória.",
     );
     formularioValido &= validarCampo(
       document.getElementById("estado"),
       "estado-error",
-      "Estado é obrigatório."
+      "Estado é obrigatório.",
     );
 
     // Validar interesse
