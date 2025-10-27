@@ -76,7 +76,7 @@ body.dark-mode .hero__background-pattern {
       rgba(255, 180, 150, 0.06) 0%,
       transparent 45%
     ),
-    url("../../images/photos/background.jpg");
+    url("../images/photos/background.jpg");
 }
 
 body.dark-mode .hero__background-pattern::before {
@@ -208,7 +208,7 @@ body.dark-mode .hero__background-pattern {
       rgba(255, 180, 150, 0.06) 0%,
       transparent 45%
     ),
-    url("../../images/photos/background.jpg");
+    url("../images/photos/background.jpg");
 }
 
 body.dark-mode .hero__background-pattern::before {
