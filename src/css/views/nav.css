@@ -28,7 +28,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
-  min-height: 22%;
+  min-height: 15%;
   align-items: center;
   position: fixed;
   z-index: 999;
@@ -274,7 +274,7 @@ a {
   }
 }
 .space--alt {
-  height: 140px;
+  height: 90px;
 }
 
 @media screen and (max-width: 1150px) {
