@@ -1,0 +1,205 @@
+@import url("../base.css");
+
+/*=============== SOBRE PAGE ========================= */
+
+.sobre__hero {
+  background: var(--grad-1st);
+  padding: var(--spacing-5xl) var(--spacing-md);
+  text-align: center;
+  color: var(--cor-w-100);
+  border-radius: 20px;
+  margin: var(--spacing-xl) auto var(--spacing-xl) auto;
+  box-shadow: var(--sombra-2);
+}
+
+.sobre__hero-title {
+  font-size: var(--fonte-4xl);
+  font-family: var(--fonte-logo);
+  margin-bottom: var(--spacing-lg);
+  text-shadow: var(--sombra-texto);
+}
+
+.sobre__hero-description {
+  font-size: var(--fonte-lg);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sobre__section-title {
+  font-size: var(--fonte-3xl);
+  font-family: var(--fonte-logo);
+  color: var(--cor-1st-900);
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  text-shadow: var(--sombra-texto);
+}
+
+.sobre__text {
+  font-size: var(--fonte-lg);
+  color: var(--cor-b-700);
+  line-height: var(--altura-linha-relaxada);
+  max-width: 800px;
+  margin: var(--spacing-xl) auto var(--spacing-xl) auto;
+  text-align: center;
+}
+
+.sobre__valores-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  max-width: 1200px;
+  margin: var(--spacing-xl) auto var(--spacing-xl) auto;
+  padding: 0;
+  list-style: none;
+}
+
+.sobre__valor {
+  background: var(--cor-w-100);
+  padding: var(--spacing-xl);
+  border-radius: 15px;
+  border-left: 5px solid var(--cor-1st-500);
+  box-shadow: var(--sombra-box);
+  transition: transform 0.3s ease;
+}
+
+.sobre__valor:hover {
+  transform: translateY(-5px);
+}
+
+.sobre__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  max-width: 800px;
+  margin: var(--spacing-xl) auto var(--spacing-xl) auto;
+}
+
+.sobre__timeline-item {
+  background: var(--cor-w-100);
+  padding: var(--spacing-lg);
+  border-radius: 10px;
+  border-left: 4px solid var(--cor-2nd-500);
+  box-shadow: var(--sombra-1);
+  position: relative;
+}
+
+.sobre__timeline-item h4 {
+  color: var(--cor-1st-800);
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--fonte-xl);
+}
+
+.sobre__equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+  max-width: 1200px;
+  margin: var(--spacing-xl) auto var(--spacing-xl) auto;
+}
+
+.sobre__membro {
+  background: var(--cor-w-100);
+  padding: var(--spacing-xl);
+  border-radius: 15px;
+  box-shadow: var(--sombra-box);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sobre__membro:hover {
+  transform: translateY(-5px);
+}
+
+.sobre__membro-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: var(--spacing-md);
+  border: 4px solid var(--cor-1st-200);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  background-color: var(--cor-w-100);
+}
+
+.sobre__membro h3 {
+  color: var(--cor-1st-800);
+  margin-bottom: var(--spacing-xs);
+}
+
+.sobre__membro p {
+  color: var(--cor-b-600);
+  margin: var(--spacing-xs) 0;
+}
+
+.sobre__estatisticas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin: var(--spacing-xl) auto var(--spacing-xl) auto;
+}
+
+.sobre__estatistica {
+  background: var(--grad-destaque);
+  padding: var(--spacing-xl);
+  border-radius: 15px;
+  text-align: center;
+  color: var(--cor-w-100);
+  box-shadow: var(--sombra-2);
+}
+
+.sobre__numero {
+  display: block;
+  font-size: var(--fonte-3xl);
+  font-weight: bold;
+  margin-bottom: var(--spacing-sm);
+}
+
+.sobre__label {
+  font-size: var(--fonte-base);
+}
+
+/*=============== RESPONSIVE DESIGN ========================= */
+
+@media (max-width: 768px) {
+  .sobre__hero {
+    padding: var(--spacing-3xl) var(--spacing-md);
+  }
+
+  .sobre__hero-title {
+    font-size: var(--fonte-3xl);
+  }
+
+  .sobre__section-title {
+    font-size: var(--fonte-2xl);
+  }
+
+  .sobre__valores-list {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre__equipe-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .sobre__estatisticas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre__hero {
+    padding: var(--spacing-2xl) var(--spacing-sm);
+  }
+
+  .sobre__estatisticas {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre__equipe-grid {
+    grid-template-columns: 1fr;
+  }
+}

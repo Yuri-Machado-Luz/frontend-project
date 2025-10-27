@@ -1,0 +1,482 @@
+/* dark-mode.css - Estilos para o modo escuro */
+
+body.dark-mode {
+  /* Sobrescrever variáveis semânticas para modo escuro */
+  --texto: var(--cor-w-100);
+  --texto-desbotado: var(--cor-w-500);
+  --fundo: var(--cor-b-900);
+  --fundo-alt: var(--cor-b-800);
+
+  /* Ajustar gradientes para modo escuro */
+  --grad-claro: linear-gradient(0deg, var(--cor-b-800) 95%, var(--cor-b-900));
+  --grad-claro-alt: linear-gradient(180deg, var(--cor-b-900) 5%, var(--cor-b-800) 95%);
+  --grad-sutil: linear-gradient(90deg, var(--cor-b-900), var(--cor-b-800));
+  --grad-divider: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+
+  --grad-footer: linear-gradient(180deg, var(--cor-b-700), var(--cor-b-800));
+
+  /* Ajustar sombras para modo escuro */
+  --sombra-texto: 0 1px 3px rgba(255, 255, 255, 0.4);
+  --sombra-1: 0 5px 10px rgba(0, 0, 0, 0.8);
+  --sombra-2: 0 10px 20px rgba(0, 0, 0, 0.9);
+  --sombra-3: 0 14px 32px rgba(0, 0, 0, 1);
+  --sombra-interna: inset 0 2px 4px rgba(255, 255, 255, 0.1);
+
+  /* Ajustar gradientes de vidro para modo escuro */
+  --grad-glass: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.12));
+}
+
+/* Overrides específicos para seções que usam cores fixas */
+
+/* Hero Section - Home */
+body.dark-mode .hero__container .hero__content {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .hero__container .hero__title {
+  color: var(--cor-w-100);
+  text-shadow:
+    var(--sombra-texto),
+    0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .hero__container .hero__description {
+  color: var(--cor-w-200);
+  text-shadow: var(--sombra-texto);
+}
+
+body.dark-mode .hero__background-pattern {
+  background:
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(0, 0, 0, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(0, 0, 0, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 40%,
+      rgba(0, 0, 0, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 60% 60%,
+      rgba(51, 204, 229, 0.08) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 30% 70%,
+      rgba(255, 180, 150, 0.06) 0%,
+      transparent 45%
+    ),
+    url("/dist/src/images/photos/background.jpg");
+}
+
+body.dark-mode .hero__background-pattern::before {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent);
+}
+
+body.dark-mode .hero__background-pattern::after {
+  background: radial-gradient(circle, rgba(51, 204, 229, 0.2), transparent);
+}
+
+/* Navigation */
+body.dark-mode .nav__container {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0.95) 0%,
+    rgba(40, 40, 40, 0.9) 90%,
+    rgba(60, 60, 60, 0.95) 100%
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .nav__item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 15px rgba(51, 204, 229, 0.2);
+}
+
+body.dark-mode .nav__menu.active {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0.95) 0%,
+    rgba(40, 40, 40, 0.9) 90%,
+    rgba(60, 60, 60, 0.95) 100%
+  );
+}
+
+/* Footer */
+body.dark-mode #main-footer {
+  background: linear-gradient(
+    0deg,
+    var(--cor-b-700) 0%,
+    var(--cor-b-800) 90%,
+    var(--cor-b-900) 100%
+  );
+}
+
+body.dark-mode .footer-col h2 {
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .footer-credits {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+body.dark-mode .mission__number,
+body.dark-mode .mission__text {
+  color: var(--cor-w-100);
+  text-shadow: var(--sombra-texto);
+}
+
+body.dark-mode .mission__text-p {
+  color: var(--cor-w-200);
+}
+
+/* Projetos Section - Home */
+body.dark-mode .projetos__card,
+body.dark-mode .content_card {
+  background: var(--cor-b-800);
+  border: 2px solid var(--cor-b-600);
+  border-left: 5px solid var(--cor-1st-400);
+  box-shadow:
+    var(--sombra-box),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .projetos__card:hover,
+body.dark-mode .content_card:hover {
+  box-shadow:
+    var(--sombra-1), var(--sombra-2), var(--sombra-3), var(--sombra-brilho),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .projetos__card h2,
+body.dark-mode .content_title {
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .projetos__descricao,
+body.dark-mode .content_text {
+  color: var(--cor-w-300);
+}
+
+body.dark-mode .projetos__duracao,
+body.dark-mode .projetos__nivel,
+body.dark-mode .projetos__resposavel {
+  color: var(--cor-w-400);
+}
+
+/* Home Section - Additional Dark Mode Overrides */
+body.dark-mode .hero__container .hero__content {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .hero__background-pattern {
+  background:
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(0, 0, 0, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(0, 0, 0, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 40%,
+      rgba(0, 0, 0, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 60% 60%,
+      rgba(51, 204, 229, 0.08) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 30% 70%,
+      rgba(255, 180, 150, 0.06) 0%,
+      transparent 45%
+    ),
+    url("/dist/src/images/photos/background.jpg");
+}
+
+body.dark-mode .hero__background-pattern::before {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent);
+}
+
+body.dark-mode .hero__background-pattern::after {
+  background: radial-gradient(circle, rgba(51, 204, 229, 0.2), transparent);
+}
+
+body.dark-mode .hero__container .hero__content {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .hero__container .hero__title {
+  text-shadow:
+    var(--sombra-texto),
+    0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .hero__container .hero__description {
+  text-shadow: var(--sombra-texto);
+}
+
+body.dark-mode .hero__container .hero__content .hero__btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.3),
+    0 6px 6px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .hero__container .hero__content .hero__btn:hover {
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .hero__container .hero__content .hero__btn::before {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+}
+
+body.dark-mode .hero__container .hero__content .hero__btn::after {
+  background: rgba(51, 204, 229, 0.1);
+}
+
+/* Contato Section - Dark Mode Overrides */
+body.dark-mode .contato__form input:focus,
+body.dark-mode .contato__form textarea:focus {
+  box-shadow: 0 0 0 3px rgba(51, 204, 229, 0.2);
+}
+
+/* Footer - Additional Dark Mode Overrides */
+body.dark-mode .footer-credits {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Sobre Page - Dark Mode Overrides */
+body.dark-mode .sobre__hero {
+  background: var(--grad-1st-escuro);
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .sobre__hero-title,
+body.dark-mode .sobre__section-title {
+  color: var(--cor-w-100);
+  text-shadow: var(--sombra-texto);
+}
+
+body.dark-mode .sobre__text {
+  color: var(--cor-w-300);
+}
+
+body.dark-mode .sobre__valor {
+  background: var(--cor-b-800);
+  border-left-color: var(--cor-1st-400);
+  box-shadow: var(--sombra-1);
+}
+
+body.dark-mode .sobre__timeline-item {
+  background: var(--cor-b-800);
+  border-left-color: var(--cor-2nd-400);
+  box-shadow: var(--sombra-1);
+}
+
+body.dark-mode .sobre__timeline-item h4 {
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .sobre__membro {
+  background: var(--cor-b-800);
+  box-shadow: var(--sombra-1);
+}
+
+body.dark-mode .sobre__membro h3 {
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .sobre__membro p {
+  color: var(--cor-w-400);
+}
+
+body.dark-mode .sobre__membro-foto {
+  border-color: var(--cor-1st-300);
+  background-color: var(--cor-b-700);
+}
+
+body.dark-mode .sobre__estatistica {
+  background: var(--grad-destaque);
+  box-shadow: var(--sombra-2);
+}
+
+/* Blog Page - Dark Mode Overrides */
+body.dark-mode .blog__hero {
+  background: var(--grad-1st-escuro);
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .blog__hero-title,
+body.dark-mode .blog__section-title {
+  color: var(--cor-w-100);
+  text-shadow: var(--sombra-texto);
+}
+
+body.dark-mode .blog__text {
+  color: var(--cor-w-300);
+}
+
+body.dark-mode .blog__card {
+  background: var(--cor-b-800);
+  border: 2px solid var(--cor-b-600);
+  border-left: 5px solid var(--cor-1st-400);
+  box-shadow: var(--sombra-1);
+}
+
+body.dark-mode .blog__card h2 {
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .blog__card p {
+  color: var(--cor-w-400);
+}
+
+body.dark-mode .blog__meta {
+  color: var(--cor-w-500);
+}
+
+body.dark-mode .blog__tag {
+  background: var(--cor-1st-600);
+  color: var(--cor-w-100);
+}
+
+/* Projetos Page - Dark Mode Overrides */
+body.dark-mode .projetos__hero {
+  background: var(--grad-1st-escuro);
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .projetos__hero-title,
+body.dark-mode .projetos__section-title {
+  color: var(--cor-w-100);
+  text-shadow: var(--sombra-texto);
+}
+
+body.dark-mode .projetos__text {
+  color: var(--cor-w-300);
+}
+
+body.dark-mode .projetos__filtro-btn {
+  background: var(--cor-b-800);
+  border: 1px solid var(--cor-b-600);
+  color: var(--cor-w-300);
+}
+
+body.dark-mode .projetos__filtro-btn.active,
+body.dark-mode .projetos__filtro-btn:hover {
+  background: var(--cor-1st-600);
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .projetos__grid-item {
+  background: var(--cor-b-800);
+  border: 2px solid var(--cor-b-600);
+  border-left: 5px solid var(--cor-1st-400);
+  box-shadow: var(--sombra-1);
+}
+
+body.dark-mode .projetos__grid-item:hover {
+  box-shadow: var(--sombra-2), var(--sombra-brilho);
+}
+
+body.dark-mode .projetos__grid-item h3 {
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .projetos__grid-item p {
+  color: var(--cor-w-400);
+}
+
+body.dark-mode .projetos__categoria,
+body.dark-mode .projetos__tecnologia {
+  background: var(--cor-1st-600);
+  color: var(--cor-w-100);
+}
+
+/* Contato Page - Dark Mode Overrides */
+body.dark-mode .contato__hero {
+  background: var(--grad-1st-escuro);
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .contato__hero-title,
+body.dark-mode .contato__section-title {
+  color: var(--cor-w-100);
+  text-shadow: var(--sombra-texto);
+}
+
+body.dark-mode .contato__text {
+  color: var(--cor-w-300);
+}
+
+body.dark-mode .contato__info-item {
+  background: var(--cor-b-800);
+  border: 1px solid var(--cor-b-600);
+  box-shadow: var(--sombra-1);
+}
+
+body.dark-mode .contato__info-item h3 {
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .contato__info-item p {
+  color: var(--cor-w-400);
+}
+
+body.dark-mode .contato__form {
+  background: var(--cor-b-800);
+  border: 1px solid var(--cor-b-600);
+  box-shadow: var(--sombra-1);
+}
+
+body.dark-mode .contato__form label {
+  color: var(--cor-w-300);
+}
+
+body.dark-mode .contato__form input,
+body.dark-mode .contato__form textarea {
+  background: var(--cor-b-700);
+  border: 1px solid var(--cor-b-600);
+  color: var(--cor-w-100);
+}
+
+body.dark-mode .contato__form input::placeholder,
+body.dark-mode .contato__form textarea::placeholder {
+  color: var(--cor-w-500);
+}
+
+body.dark-mode .contato__btn {
+  background: var(--grad-destaque);
+  color: var(--cor-w-100);
+  box-shadow: var(--sombra-1);
+}
+
+body.dark-mode .contato__btn:hover {
+  box-shadow: var(--sombra-2), var(--sombra-brilho);
+}
