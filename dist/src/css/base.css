@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Monofett&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("./componentes.css");
+@import url("./animations.css");
+@import url("./views/nav.css");
+@import url("./views/footer.css");
+@import url("./views/home.css");
+
+
+html {
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-1st);
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* ===== VARIÁVEIS GLOBAIS ===== */
+:root {
+  /* ===== FONTES ===== */
+  --fonte-1st: "Ubuntu", sans-serif;
+  --fonte-2nd: "IBM Plex Serif", serif;
+  --fonte-3rd: "Monofett", monospace;
+  --fonte-logo: "Barriecito", system-ui;
+
+  /* ===== TAMANHOS DE FONTE ===== */
+  --fonte-xs: 0.75rem; /* 12px */
+  --fonte-sm: 0.875rem; /* 14px */
+  --fonte-base: 1rem; /* 16px */
+  --fonte-lg: 1.125rem; /* 18px */
+  --fonte-xl: 1.25rem; /* 20px */
+  --fonte-2xl: 1.5rem; /* 24px */
+  --fonte-3xl: 1.875rem; /* 30px */
+  --fonte-4xl: 2.25rem; /* 36px */
+  --fonte-5xl: 3rem; /* 48px */
+  --fonte-6xl: 3.75rem; /* 60px */
+
+  /* ===== ESPAÇAMENTOS ===== */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 3rem; /* 48px */
+  --spacing-3xl: 4rem; /* 64px */
+  --spacing-4xl: 6rem; /* 96px */
+  --spacing-5xl: 8rem; /* 128px */
+  --spacing-6xl: 12rem; /* 192px */
+
+
+
+  /* ===== BREAKPOINTS PARA RESPONSIVIDADE ===== */
+  --quebra-sm: 576px;
+  --quebra-md: 768px;
+  --quebra-lg: 992px;
+  --quebra-xl: 1200px;
+
+  /* ===== LARGURAS MÁXIMAS DE CONTAINER ===== */
+  --largura-sm: 576px;
+  --largura-md: 768px;
+  --largura-lg: 992px;
+  --largura-xl: 1200px;
+
+  /* ===== PALETA DE CORES ===== */
+  /* Branco */
+  --cor-w-100: rgb(245, 245, 245);
+  --cor-w-200: rgb(230, 230, 230);
+  --cor-w-300: rgb(220, 220, 220);
+  --cor-w-400: rgb(200, 200, 200);
+  --cor-w-500: rgb(180, 180, 180);
+  --cor-w-600: rgb(160, 160, 160);
+  --cor-w-700: rgb(140, 140, 140);
+
+  /* Preto */
+  --cor-b-300: rgb(100, 100, 101);
+  --cor-b-400: rgb(80, 80, 81);
+  --cor-b-500: rgb(60, 60, 61);
+  --cor-b-600: rgb(40, 40, 41);
+  --cor-b-700: rgb(25, 26, 28);
+  --cor-b-800: rgb(30, 25, 26);
+  --cor-b-900: rgb(25, 21, 22);
+
+  /* Primária (Azul) */
+  --cor-1st-100: rgb(51, 204, 229);
+  --cor-1st-200: rgb(33, 150, 173);
+  --cor-1st-300: rgb(22, 105, 122);
+  --cor-1st-400: rgb(17, 78, 90);
+  --cor-1st-500: rgb(14, 78, 90);
+  --cor-1st-600: rgb(12, 52, 60);
+  --cor-1st-700: rgb(10, 52, 60);
+  --cor-1st-800: rgb(8, 52, 60);
+
+  /* Secundária (Laranja) */
+  --cor-2nd-100: rgb(255, 180, 150);
+  --cor-2nd-200: rgb(255, 160, 130);
+  --cor-2nd-300: rgb(247, 142, 105);
+  --cor-2nd-400: rgb(255, 120, 80);
+  --cor-2nd-500: rgb(214, 99, 70);
+  --cor-2nd-600: rgb(184, 79, 60);
+  --cor-2nd-700: rgb(150, 70, 50);
+  --cor-2nd-800: rgb(120, 50, 35);
+  --cor-2nd-900: rgb(100, 40, 25);
+
+  /* Cores de Estado */
+  --cor-sucesso: rgb(34, 197, 94);
+  --cor-aviso: rgb(251, 191, 36);
+  --cor-erro: rgb(239, 68, 68);
+  --cor-info: rgb(176, 15, 200);
+
+  /* ===== VARIÁVEIS SEMÂNTICAS ===== */
+  --texto: var(--cor-b-900);
+  --texto-desbotado: var(--cor-b-300);
+  --fundo: var(--cor-w-200);
+  --fundo-alt: var(--cor-w-100);
+  --primaria: var(--cor-1st-300);
+  --primaria-escura: var(--cor-1st-700);
+  --secundaria: var(--cor-2nd-300);
+  --secundaria-escura: var(--cor-2nd-700);
+  --sucesso: var(--cor-sucesso);
+  --aviso: var(--cor-aviso);
+  --erro: var(--cor-erro);
+  --info: var(--cor-info);
+
+  /* ===== SOMBRAS ===== */
+  --sombra-texto: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --sombra-1: 0 5px 10px rgba(0, 0, 0, 0.44);
+  --sombra-2: 0 10px 20px rgba(0, 0, 0, 0.55);
+  --sombra-3: 0 14px 32px rgba(0, 0, 0, 0.66);
+  --luz-1: 0 0px 16px rgba(255, 255, 255, 0.8);
+  --luz-2: 0 0px 24px rgba(255, 255, 255, 0.8);
+  --luz-3: 0 0px 32px rgba(255, 255, 255, 0.8);
+  --sombra-interna: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  --sombra-brilho: 0 0 10px rgba(33, 150, 173, 0.5);
+
+  /* ===== GRADIENTES ===== */
+  --grad-1st: linear-gradient(0deg, var(--cor-1st-200) 97%, var(--cor-w-200));
+  --grad-1st-escuro: linear-gradient(180deg, var(--cor-1st-400) 95%, var(--cor-w-300));
+  --grad-1st-claro: linear-gradient(180deg, var(--cor-w-100) 96%, var(--cor-1st-200));
+  --grad-1st-deep: linear-gradient(180deg, var(--cor-1st-400), var(--cor-1st-700));
+  --grad-1st-soft: linear-gradient(180deg, var(--cor-1st-200) 0%, rgba(255,255,255,0) 100%);
+
+  --grad-2nd: linear-gradient(0deg, var(--cor-2nd-200) 97%, var(--cor-w-200));
+  --grad-2nd-escuro: linear-gradient(0deg, var(--cor-2nd-400) 95%, var(--cor-w-300));
+  --grad-2nd-claro: linear-gradient(180deg, var(--cor-w-100) 92%, var(--cor-2nd-200));
+  --grad-2nd-deep: linear-gradient(180deg, var(--cor-2nd-300), var(--cor-2nd-700));
+  --grad-2nd-soft: linear-gradient(0deg, var(--cor-2nd-200), rgba(255,255,255,0));
+
+  --grad-claro: linear-gradient(0deg, var(--cor-w-200) 95%, var(--cor-w-100));
+  --grad-claro-alt: linear-gradient(180deg, var(--cor-w-100) 5%, var(--cor-w-200) 95%);
+  --grad-sutil: linear-gradient(90deg, var(--cor-w-100), var(--cor-w-200));
+  --grad-divider: linear-gradient(90deg, rgba(0,0,0,0.04), rgba(0,0,0,0.02));
+
+  --grad-escuro: linear-gradient(0deg, var(--cor-b-900) 50%, var(--cor-b-300));
+  --grad-footer: linear-gradient(180deg, var(--cor-b-800), var(--cor-b-900));
+
+  --grad-destaque: linear-gradient(45deg, var(--cor-1st-200), var(--cor-2nd-200));
+  --grad-hero: linear-gradient(120deg, var(--cor-1st-200), var(--cor-2nd-200) 60%, var(--cor-w-100) 100%);
+  --grad-botao: linear-gradient(135deg, var(--primaria), var(--primaria-escura));
+  --grad-cta: linear-gradient(90deg, var(--secundaria), var(--primaria-escura));
+
+  --grad-texto: linear-gradient(45deg, var(--cor-1st-300), var(--cor-2nd-300));
+  --grad-texto-contrast: linear-gradient(90deg, var(--cor-1st-400), var(--cor-b-700));
+
+  --grad-radial: radial-gradient(circle at 20% 30%, var(--cor-1st-200) 0%, rgba(255,255,255,0) 40%);
+  --grad-conic: conic-gradient(from 180deg at 50% 50%, var(--cor-1st-200), var(--cor-2nd-200), var(--cor-w-100));
+
+  --grad-glass: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.12));
+  --grad-brilho: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.6), rgba(255,255,255,0) 40%);
+
+
+  /* ===== TIPOGRAFIA ADICIONAL ===== */
+  --altura-linha-apertada: 1.25;
+  --altura-linha-normal: 1.5;
+  --altura-linha-relaxada: 1.75;
+  --espacamento-letras-apertado: -0.025em;
+  --espacamento-letras-normal: 0;
+  --espacamento-letras-amplo: 0.025em;
+  --peso-fonte-leve: 300;
+  --peso-fonte-normal: 400;
+  --peso-fonte-medio: 500;
+  --peso-fonte-negrito: 700;
+
+  /* ===== ESTADOS INTERATIVOS ===== */
+  --contorno-foco: 2px solid var(--primaria);
+}

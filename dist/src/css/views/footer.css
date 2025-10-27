@@ -1,0 +1,124 @@
+@import url("../base.css");
+
+#main-footer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    0deg,
+    var(--cor-1st-300) 0%,
+    var(--cor-1st-500) 90%,
+    var(--cor-1st-800) 100%
+  );
+  color: var(--cor-w-100);
+  padding: var(--spacing-xl) var(--spacing-md);
+  animation: fadeInUp 1s ease-out;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.footer-col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  animation: fadeIn 0.8s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  & h2 {
+    font-size: 2rem;
+    font-family: var(--fonte-logo);
+    color: var(--cor-b-900);
+    text-shadow: var(--sombra-texto);
+    margin-bottom: var(--spacing-md);
+    & span {
+      color: var(--cor-2nd-500);
+      text-shadow: 0 0 2px var(--cor-b-500), 0 0 5px var(--cor-2nd-600);
+    }
+  }
+  & ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    & li {
+      margin-bottom: var(--spacing-sm);
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: translateX(5px);
+      }
+    }
+  }
+  &:nth-child(2) {
+    margin-left: auto;
+  }
+}
+
+.footer-col:nth-child(2),
+.footer-col:nth-child(3) {
+  text-align: right;
+  margin-right: 20px;
+  & ul {
+    text-align: right;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    unicode-bidi: null;
+  }
+  & ul li {
+    text-align: right;
+    margin: 0;
+  }
+}
+
+.footer-col:nth-child(1) {
+  text-wrap: wrap;
+}
+
+.footer-credits {
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  margin-top: var(--spacing-lg);
+  display: flex;
+  animation: fadeIn 0.8s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  & a {
+    color: var(--cor-2nd-400);
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    margin-left: var(--spacing-sm);
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--cor-2nd-200);
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
