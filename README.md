@@ -94,10 +94,9 @@ Este projeto foi desenvolvido em quatro entregas conforme os requisitos do curso
 - **Terceira Entrega**: JavaScript avançado, SPA (Single Page Application), manipulação do DOM e validação dinâmica.
 - **Quarta Entrega**: Controle de versão com Git/GitHub, acessibilidade WCAG 2.1, otimização para produção e documentação.
 
-## Status do Projeto
+## Otimização para Produção
 
-- **Status**: Projeto finalizado e hospedado no GitHub Pages.
-- **Deploy**: Acesse o site em [https://yuri-machado-luz.github.io/frontend-project/](https://yuri-machado-luz.github.io/frontend-project/).
+Os arquivos CSS foram minificados para otimizar o desempenho. Execute `npm run build:css` para gerar `src/css/main.min.css`.
 
 ## Contribuição
 

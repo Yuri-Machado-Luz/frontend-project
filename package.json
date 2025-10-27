@@ -15,14 +15,22 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "combine-css": "node combine-css.js",
+    "build:css": "npm run combine-css && postcss src/css/combined.css -o src/css/main.min.css"
   },
   "dependencies": {
     "express": "^5.1.0",
     "modern-normalize": "^3.0.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "clean-css-cli": "^5.6.3",
+    "cssnano": "^7.1.1",
     "eslint": "^9.38.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-nesting": "^13.0.2",
     "prettier": "^3.6.2"
   },
   "repository": {
