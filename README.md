@@ -68,15 +68,9 @@ frontend-project/
 │   ├── images/            # Imagens e ícones
 │   ├── js/                # Scripts JavaScript
 │   └── views/             # Templates HTML
-├── temp/                  # Dados mock (JSON)
-│   ├── blog.json
-│   ├── cursos.json
-│   ├── doacoes.json
-│   ├── usuarios.json
-│   └── voluntarios.json
+├
 ├── .gitignore             # Arquivos ignorados pelo Git
 ├── app.js                 # Lógica JavaScript do frontend
-├── arquivos.ps1           # Script PowerShell (utilitário)
 ├── index.html             # Página principal
 ├── LICENSE.md             # Licença do projeto
 ├── package.json           # Configuração do projeto Node.js
