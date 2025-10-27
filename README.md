@@ -85,11 +85,19 @@ frontend-project/
 - **Cadastro**: Formulário para registro de usuários com validação.
 - **Backend Simples**: API básica com dados mock para simular funcionalidades.
 
+## Entregas do Projeto
+
+Este projeto foi desenvolvido em quatro entregas conforme os requisitos do curso. Para detalhes completos sobre cada entrega, consulte [SOBRE.md](SOBRE.md).
+
+- **Primeira Entrega**: Estrutura HTML5 semântica, formulários complexos e validação nativa.
+- **Segunda Entrega**: Sistema de design CSS3, leiautes responsivos com Flexbox/Grid, navegação interativa.
+- **Terceira Entrega**: JavaScript avançado, SPA (Single Page Application), manipulação do DOM e validação dinâmica.
+- **Quarta Entrega**: Controle de versão com Git/GitHub, acessibilidade WCAG 2.1, otimização para produção e documentação.
+
 ## Status do Projeto
 
-- **Branch Atual**: `active/dev`
-- **Pull Request Ativo**: [update: esqueleto básico](https://github.com/Yuri-Machado-Luz/frontend-project/pull/1)
-- **Entregas**: Baseado em unidades do curso (ver [SOBRE.md](SOBRE.md) para detalhes).
+- **Status**: Projeto finalizado e hospedado no GitHub Pages.
+- **Deploy**: Acesse o site em [https://yuri-machado-luz.github.io/frontend-project/](https://yuri-machado-luz.github.io/frontend-project/).
 
 ## Contribuição
 
