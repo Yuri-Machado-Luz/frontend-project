@@ -5,32 +5,32 @@ export const roteador = () => {
 
   const routes = {
     404: {
-      template: "/dist/src/views/pages/404.html",
+      template: "./src/views/pages/404.html",
       title: "404 | " + urlPageTitle,
       description: "Page not found",
     },
     "/": {
-      template: "/dist/src/views/pages/home.html",
+      template: "./src/views/pages/home.html",
       title: urlPageTitle,
       description: "Página inicial do EducaTEC",
     },
     sobre: {
-      template: "/dist/src/views/pages/sobre.html",
+      template: "./src/views/pages/sobre.html",
       title: "Sobre | " + urlPageTitle,
       description: "Página sobre o EducaTEC",
     },
     projetos: {
-      template: "/dist/src/views/pages/projetos.html",
+      template: "./src/views/pages/projetos.html",
       title: "Projetos | " + urlPageTitle,
       description: "Página de projetos do EducaTEC",
     },
     blog: {
-      template: "/dist/src/views/pages/blog.html",
+      template: "./src/views/pages/blog.html",
       title: "Blog | " + urlPageTitle,
       description: "Página do blog do EducaTEC",
     },
     contato: {
-      template: "/dist/src/views/pages/contato.html",
+      template: "./src/views/pages/contato.html",
       title: "Contato | " + urlPageTitle,
       description: "Página de contato do EducaTEC",
     },

@@ -1,2 +1,2 @@
-import { roteador } from "/dist/src/js/modules/router.js";
+import { roteador } from "./src/js/modules/router.js";
 roteador();
