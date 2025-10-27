@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="EducaTEC - ONG dedicada a promover a educação tecnológica para jovens em comunidades carentes. Junte-se a nós para transformar vidas através da tecnologia."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- script para aguardar o carregamento do conteúdo do script router (conteúdo do main) -->
+    <link rel="stylesheet" href="./dist/src/css/main.css" />
+    <title>EducaTEC</title>
+  </head>
+
+  <body id="body">
+    <!-- Componente de Navegação -->
+    <header id="header">
+      <nav class="nav__container">
+        <div class="nav__bar">
+          <!-- <object data="./dist/src/images/icons/3.png" type="image/png" id="nav__animated"></object> -->
+          <a href="#" id="nav__logo"><span>Educa</span></a>
+
+          <button class="theme__btn" data-theme>
+            <img
+              src="/dist/src/images/icons/dark_mode_70dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png"
+              alt="Alternar para modo escuro"
+              class="theme-icon theme-icon--dark"
+            />
+            <img
+              src="/dist/src/images/icons/light_mode_70dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png"
+              alt="Alternar para modo claro"
+              class="theme-icon theme-icon--light"
+            />
+          </button>
+
+          <button
+            class="hamburger__btn"
+            id="hamburger-btn"
+            aria-label="Abrir menu"
+          >
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+
+          <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item"><a href="#" class="nav__links">HOME</a></li>
+            <li class="nav__item">
+              <a href="#sobre" class="nav__links">SOBRE</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projetos" class="nav__links">PROJETOS</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__links">BLOG</a>
+            </li>
+            <li class="nav__item" id="contato__btn-li">
+              <a href="#contato" id="contato__btn" class="nav__links"
+                >CONTATO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <script src="dist/src/js/utils/interact.js"></script>
+      <div class="space--alt"></div>
+    </header>
+
+    <!-- Área principal para carregamento dinâmico -->
+    <main id="main-content" data-link></main>
+
+    <!-- Componente de Rodapé -->
+    <footer id="main-footer">
+      <div class="footer-grid">
+        <section class="footer-col">
+          <h2 class="footer-logo">Educa<span>TEC</span></h2>
+          <p class="footer-desc">
+            Transformando vidas <br />
+            por meio da tecnologia.
+          </p>
+        </section>
+        <section class="footer-col">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="mailto:educatec@ong.org">educatec@ong.org</a></li>
+            <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+            <li><span>São Paulo, SP</span></li>
+          </ul>
+        </section>
+        <section class="footer-col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer-credits">
+        <p>
+          © EducaTEC —
+          <a href="https://github.com/Yuri-Machado-Luz/frontend-project"
+            >Yuri Machado Luz</a
+          >
+          | Licença:
+          <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+            >CC BY-NC 4.0</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="dist/src/js/utils/dark-mode.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

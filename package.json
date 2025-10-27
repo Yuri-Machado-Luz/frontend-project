@@ -14,11 +14,23 @@
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "dependencies": {
+    "express": "^5.1.0",
+    "modern-normalize": "^3.0.1"
+  },
+  "devDependencies": {
     "eslint": "^9.38.0",
-    "git": "^0.1.5",
     "prettier": "^3.6.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuri-Machado-Luz/frontend-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yuri-Machado-Luz/frontend-project/issues"
+  },
+  "homepage": "https://github.com/Yuri-Machado-Luz/frontend-project#readme"
 }

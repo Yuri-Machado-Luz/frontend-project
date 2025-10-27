@@ -1,0 +1,190 @@
+<section class="hero__container" role="banner" aria-labelledby="hero-title">
+  <div class="hero__background-pattern"></div>
+  <div class="hero__content">
+    <h1 id="hero-title" class="hero__title">
+      Educação e Tecnologia para Todos
+    </h1>
+    <p class="hero__description">
+      Transformando vidas através da acessibilidade e inclusão digital. <br />
+      Junte-se a nós nessa jornada de aprendizado e crescimento.
+    </p>
+    <div class="hero__btns" role="group" aria-label="Ações principais">
+      <a href="#doacoes" class="hero__btn" aria-describedby="doacoes-desc"
+        ><span>💝</span> Fazer Doação</a
+      >
+      <a
+        href="#voluntarios"
+        class="hero__btn"
+        aria-describedby="voluntarios-desc"
+        ><span>🤝</span> Ser Voluntário</a
+      >
+    </div>
+    <ul class="hero__stats" role="list" aria-label="Nossos números">
+      <li class="mission__link" role="listitem">
+        <span class="mission__icon">👥</span>
+        <span class="mission__number" aria-label="cinco mil">5.000+</span>
+        <br />
+        <span class="mission__text">jovens transformados</span>
+      </li>
+      <li class="mission__link" role="listitem">
+        <span class="mission__icon">🏘️</span>
+        <span class="mission__number" aria-label="cinquenta">50+</span> <br />
+        <span class="mission__text">comunidades impactadas</span>
+      </li>
+      <li class="mission__link" role="listitem">
+        <span class="mission__icon">❤️</span>
+        <span class="mission__number" aria-label="duzentos">200+</span> <br />
+        <span class="mission__text">voluntários engajados</span>
+      </li>
+    </ul>
+  </div>
+</section>
+<section
+  class="mission__container"
+  role="region"
+  aria-labelledby="mission-title"
+>
+  <h2 id="mission-title" class="mission__subtitle">Nossa Missão</h2>
+  <p class="mission__text-p">
+    Acreditamos que a <strong>educação tecnológica</strong> é a ponte para um
+    futuro mais justo e inclusivo. Nossa missão vai além de ensinar código —
+    <em>transformamos vidas</em>, construímos oportunidades e criamos uma rede
+    de apoio que se estende por gerações.
+  </p>
+  <div
+    class="mission__highlights"
+    role="list"
+    aria-label="Pilares da nossa missão"
+  >
+    <p class="mission__highlight" role="listitem">
+      Inovação através da tecnologia acessível
+    </p>
+    <p class="mission__highlight" role="listitem">
+      Comunidade que cresce junto
+    </p>
+    <p class="mission__highlight" role="listitem">
+      Transformação social sustentável
+    </p>
+  </div>
+</section>
+<section
+  class="content__card_container"
+  role="main"
+  aria-labelledby="content-header"
+>
+  <h1 id="content-header" class="content__header">
+    Faça Parte Dessa Transformação
+  </h1>
+  <div class="content__cards_wrapper">
+    <div class="content_card" data-index="0">
+      <h3 class="content_title" id="doacoes">
+        💝 Doações que Transformam Vidas
+      </h3>
+      <ul role="list" aria-labelledby="doacoes">
+        <li class="content_text">Contribua mensalmente com nossa missão</li>
+        <li class="content_text">Faça uma doação única e especial</li>
+        <li class="content_text">Doe equipamentos para nossos alunos</li>
+      </ul>
+      <button
+        type="button"
+        class="content__btn"
+        onclick="window.location.hash='#contato'"
+      >
+        Fazer Doação
+      </button>
+    </div>
+    <div class="content_card" data-index="1">
+      <h3 class="content_title" id="voluntarios">
+        🤝 Voluntários que Inspiram
+      </h3>
+      <ul role="list" aria-labelledby="voluntarios">
+        <li class="content_text">Compartilhe seu conhecimento como mentor</li>
+        <li class="content_text">Ministre aulas e workshops</li>
+        <li class="content_text">Ofereça suporte técnico aos projetos</li>
+        <li class="content_text">Organize eventos comunitários</li>
+      </ul>
+      <button
+        type="button"
+        class="content__btn"
+        onclick="window.location.hash='#contato'"
+      >
+        Ser Voluntário
+      </button>
+    </div>
+    <div class="content_card" data-index="2">
+      <h3 class="content_title" id="projetos">🚀 Projetos que Mudam o Mundo</h3>
+      <ul role="list" aria-labelledby="projetos">
+        <li class="content_text">Aprenda desenvolvimento web do zero</li>
+        <li class="content_text">Participe de atividades práticas</li>
+        <li class="content_text">Junte-se à nossa comunidade</li>
+      </ul>
+      <button
+        type="button"
+        class="content__btn"
+        onclick="document.querySelector('#projetos').scrollIntoView({behavior: 'smooth'})"
+      >
+        Conhecer Projetos
+      </button>
+    </div>
+  </div>
+</section>
+<section
+  class="projetos__container"
+  role="region"
+  aria-labelledby="projetos-header"
+>
+  <h1 id="projetos-header" class="projetos__header">Conheça Nossos Projetos</h1>
+  <div class="projetos__cards" role="list" aria-label="Cursos disponíveis">
+    <div class="projetos__card" role="listitem" data-index="0">
+      <div class="projetos__icon">💻</div>
+      <h2 class="projetos__titulo">Introdução ao Desenvolvimento Web</h2>
+      <div class="projetos__placeholder">
+        <span class="projetos__descricao">
+          Aprenda os fundamentos do desenvolvimento web de forma prática e
+          acessível. Desde HTML e CSS até conceitos básicos de JavaScript, você
+          construirá seus primeiros sites com orientação personalizada.
+        </span>
+        <span class="projetos__duracao">8 semanas</span>
+        <span class="projetos__nivel">Iniciante</span>
+        <span class="projetos__resposavel">Ana Silva</span>
+      </div>
+      <div class="projetos__actions" role="group" aria-label="Ações do curso">
+        <a href="#projetos" class="projetos__btn">Saiba Mais</a>
+      </div>
+    </div>
+    <div class="projetos__card" role="listitem" data-index="1">
+      <div class="projetos__icon">🐍</div>
+      <h2 class="projetos__titulo">Programação em Python</h2>
+      <div class="projetos__placeholder">
+        <span class="projetos__descricao">
+          Domine a linguagem Python através de projetos reais e exercícios
+          práticos. Ideal para quem quer ingressar no mundo da programação ou
+          aprimorar suas habilidades técnicas.
+        </span>
+        <span class="projetos__duracao">10 semanas</span>
+        <span class="projetos__nivel">Intermediário</span>
+        <span class="projetos__resposavel">Carlos Souza</span>
+      </div>
+      <div class="projetos__actions" role="group" aria-label="Ações do curso">
+        <a href="#projetos" class="projetos__btn">Saiba Mais</a>
+      </div>
+    </div>
+    <div class="projetos__card" role="listitem" data-index="2">
+      <div class="projetos__icon">🎨</div>
+      <h2 class="projetos__titulo">Fundamentos de UX/UI Design</h2>
+      <div class="projetos__placeholder">
+        <span class="projetos__descricao">
+          Descubra os princípios do design centrado no usuário e crie interfaces
+          digitais atraentes. Aprenda a pensar como um designer e desenvolver
+          soluções visuais impactantes.
+        </span>
+        <span class="projetos__duracao">6 semanas</span>
+        <span class="projetos__nivel">Iniciante</span>
+        <span class="projetos__resposavel">Beatriz Fernandes</span>
+      </div>
+      <div class="projetos__actions" role="group" aria-label="Ações do curso">
+        <a href="#projetos" class="projetos__btn">Saiba Mais</a>
+      </div>
+    </div>
+  </div>
+</section>
