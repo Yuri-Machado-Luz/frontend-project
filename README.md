@@ -4,6 +4,17 @@ Projeto desenvolvido como requisito para conclusão do curso em Análise e Desen
 
 **Status do Projeto:** Versão 1.0 - Concluído
 
+https://yuri-machado-luz.github.io/frontend-project/
+
+## Entregas do Projeto
+
+Este projeto foi desenvolvido em quatro entregas conforme os requisitos do curso. Para detalhes completos sobre cada entrega, consulte [SOBRE.md](SOBRE.md).
+
+- **Primeira Entrega**: Estrutura HTML5 semântica, formulários complexos e validação nativa.
+- **Segunda Entrega**: Sistema de design CSS3, leiautes responsivos com Flexbox/Grid, navegação interativa.
+- **Terceira Entrega**: JavaScript avançado, SPA (Single Page Application), manipulação do DOM e validação dinâmica.
+- **Quarta Entrega**: Controle de versão com Git/GitHub, acessibilidade WCAG 2.1, otimização para produção e documentação.
+
 Para mais detalhes sobre a proposta e entregas, consulte [SOBRE.md](SOBRE.md).
 
 ## Tecnologias Utilizadas
@@ -12,7 +23,6 @@ Para mais detalhes sobre a proposta e entregas, consulte [SOBRE.md](SOBRE.md).
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 ![PostCSS](https://img.shields.io/badge/PostCSS-DD3735?style=for-the-badge&logo=postcss&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
@@ -98,59 +108,56 @@ Este comando combina todos os arquivos CSS em `src/css/combined.css` e gera `src
 
 ```text
 frontend-project/
-├── .git/                     # Controle de versão Git
-├── .github/                  # Workflows GitHub Actions
-├── .gitignore                # Arquivos ignorados pelo Git
 ├── config/                   # Arquivos de configuração
 │   ├── eslint.config.js      # Configuração ESLint
 │   └── postcss.config.js     # Configuração PostCSS
-├── node_modules/             # Dependências instaladas
-├── package-lock.json         # Lockfile do npm
 ├── scripts/                  # Scripts utilitários
 │   └── combine-css.js        # Script para combinar CSS
+├── src/                      # Código fonte organizado
+│     ├── css/                  # Estilos CSS
+│     │   ├── animations.css    # Animações CSS
+│     │   ├── base.css          # Estilos base
+│     │   ├── combined.css      # CSS combinado (gerado)
+│     │   ├── main.css          # Estilos principais
+│     │   ├── main.min.css      # CSS minificado (gerado)
+│     │   └── views/            # Estilos específicos por view
+│     │       ├── blog.css
+│     │       ├── contato.css
+│     │       ├── dark-mode.css
+│     │       ├── footer.css
+│     │       ├── home.css
+│     │       ├── nav.css
+│     │       ├── projetos.css
+│     │       └── sobre.css
+│     ├── images/                # Imagens e ícones
+│     │   ├── icons/
+│     │   └── photos/
+│     ├── js/                    # Scripts JavaScript
+│     │   ├── modules/           # Módulos JS
+│     │   │   ├── contato.js
+│     │   │   └── router.js
+│     │   └── utils/             # Utilitários JS
+│     │       ├── dark-mode.js
+│     │       └── interact.js
+│     └── views/                 # Templates HTML
+│         └── pages/             # Páginas HTML
+│             ├── 404.html
+│             ├── blog.html
+│             ├── contato.html
+│             ├── home.html
+│             ├── projetos.html
+│             └── sobre.html
 ├── tests/                    # Testes automatizados
 │   └── server.test.js        # Testes do servidor
+├── .gitignore
+├── LICENSE.md                # Licença do projeto (CC BY-NC-ND 4.0)
+├── README.md                 # Este arquivo
+├── SOBRE.md                  # Detalhes da proposta do projeto
 ├── app.js                    # Lógica JavaScript do frontend
 ├── index.html                # Página principal
-├── LICENSE.md                # Licença do projeto (CC BY-NC-ND 4.0)
+├── package-lock.json         # Lockfile do npm
 ├── package.json              # Configuração do projeto Node.js
-├── README.md                 # Este arquivo
-├── server.js                 # Servidor backend (Express)
-├── SOBRE.md                  # Detalhes da proposta do projeto
-└── src/                      # Código fonte organizado
-    ├── css/                  # Estilos CSS
-    │   ├── animations.css    # Animações CSS
-    │   ├── base.css          # Estilos base
-    │   ├── combined.css      # CSS combinado (gerado)
-    │   ├── main.css          # Estilos principais
-    │   ├── main.min.css      # CSS minificado (gerado)
-    │   └── views/            # Estilos específicos por view
-    │       ├── blog.css
-    │       ├── contato.css
-    │       ├── dark-mode.css
-    │       ├── footer.css
-    │       ├── home.css
-    │       ├── nav.css
-    │       ├── projetos.css
-    │       └── sobre.css
-    ├── images/                # Imagens e ícones
-    │   ├── icons/
-    │   └── photos/
-    ├── js/                    # Scripts JavaScript
-    │   ├── modules/           # Módulos JS
-    │   │   ├── contato.js
-    │   │   └── router.js
-    │   └── utils/             # Utilitários JS
-    │       ├── dark-mode.js
-    │       └── interact.js
-    └── views/                 # Templates HTML
-        └── pages/             # Páginas HTML
-            ├── 404.html
-            ├── blog.html
-            ├── contato.html
-            ├── home.html
-            ├── projetos.html
-            └── sobre.html
+├── server.js                 # Servidor backend (Express) 
 ```
 
 ## Funcionalidades
@@ -196,14 +203,6 @@ O projeto utiliza GitHub Actions para integração contínua. O workflow executa
 
 O projeto usa PostCSS para processar CSS, com plugins para aninhamento, autoprefixer e minificação. Configurado em `postcss.config.js`.
 
-## Entregas do Projeto
-
-Este projeto foi desenvolvido em quatro entregas conforme os requisitos do curso. Para detalhes completos sobre cada entrega, consulte [SOBRE.md](SOBRE.md).
-
-- **Primeira Entrega**: Estrutura HTML5 semântica, formulários complexos e validação nativa.
-- **Segunda Entrega**: Sistema de design CSS3, leiautes responsivos com Flexbox/Grid, navegação interativa.
-- **Terceira Entrega**: JavaScript avançado, SPA (Single Page Application), manipulação do DOM e validação dinâmica.
-- **Quarta Entrega**: Controle de versão com Git/GitHub, acessibilidade WCAG 2.1, otimização para produção e documentação.
 
 ## Acessibilidade
 
